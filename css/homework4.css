@@ -103,6 +103,7 @@ img{
 }
 img[src$="flash.png"]{
     top: 20%;
+    position: absolute;
 }
 img[src*="pika2.jpg"]{
 	width: 70%;
@@ -116,7 +117,7 @@ img[src*="fb.png"]{
 h1{
     font-size: 30px;
     position: relative;
-    top: 20%;
+    top: 70%;
     text-align:center;
     color: #ffff77;
 }
