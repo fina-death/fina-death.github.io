@@ -1,0 +1,74 @@
+body {
+	background-color: #001234;
+}
+.wrap{
+	background-color: #123456;
+}
+
+.circle1{
+	background-color: #00ffff;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	position: absolute;
+	left: 20%;
+}
+
+.circle2{
+	background-color: #773300;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	left: 30%;
+}
+
+.circle3{
+	background-color: #a53861;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	position: absolute;
+	left: 40%;
+
+}
+
+.circle4{
+	background-color: #ffffff;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+}
+
+.circle5{
+	background-color: #88c388;	
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	left: 60%;
+}
+.circle6{
+	background-color: #a5dd44;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	left: 70%;
+}
+table{
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	font-size: 20px;
+	color: #ffffff;
+
+}
+img[src*="pika2.jpg"]{
+	width: 70%;
+	top: 15%;
+	left: 15%;
+	position: absolute;
+}
