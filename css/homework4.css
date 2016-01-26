@@ -1,74 +1,133 @@
+html{
+    height: 100%;
+}
 body {
-	background-color: #001234;
+	background-color: #ffff77;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
 }
 .wrap{
-	background-color: #123456;
+	background-color: #ffffff;
 }
-
+/*circles*/
+[class*="circle"]{
+    transform:translateX(-50%);
+}
 .circle1{
-	background-color: #00ffff;
-	height: 300px;
-	width: 300px;
+	background-color: #ff8888;
+	height: 250px;
+	width: 250px;
 	border-radius: 50%;
 	position: absolute;
-	left: 20%;
+	left: 40%;
+    top: -40px;
 }
-
 .circle2{
 	background-color: #773300;
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	position: absolute;
-	left: 30%;
+	left: 31%;
+    top: 25%;
 }
 
 .circle3{
-	background-color: #a53861;
-	width: 500px;
-	height: 500px;
+	background-color: #ffffff;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	position: absolute;
-	left: 40%;
-
+    top: 20%;
+	left: 50%;
+    color: #773300;
+    padding: 100px 100px 100px 100px;
+    font-size: 18px;
+    text-align:center;
 }
-
 .circle4{
 	background-color: #ffffff;
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 	position: absolute;
-	left: 50%;
+	left: 64%;
+    top: 20%;
 }
 
 .circle5{
-	background-color: #88c388;	
-	width: 150px;
-	height: 150px;
+	background-color: #773300;	
+	width: 80px;
+	height: 60px;
 	border-radius: 50%;
 	position: absolute;
 	left: 60%;
+    color: #ffffff;
+    text-align:center;
+    padding: 20px 10px 20px 10px;
+    left: 80%;
+    top: 80%;
 }
 .circle6{
-	background-color: #a5dd44;
-	width: 200px;
-	height: 200px;
+	background-color: #ff8888;
+	width: 160px;
+	height: 110px;
 	border-radius: 50%;
-	position: absolute;
-	left: 70%;
+	position: fixed;
+	left: 40%;
+    bottom: -20px;
+    padding: 70px 20px 20px 20px;
+    text-align:center;
+    color: #ffff77;
 }
+/*table*/
 table{
-	position: absolute;
+	position: relative;
 	left: 20%;
-	top: 20%;
+	top: 30%;
 	font-size: 20px;
 	color: #ffffff;
-
+    transform:translateX(-50%);
+    left: 50%;
+}
+td{
+    font-size: 20px;
+}
+/*img*/
+img{
+    position: relative;
+    transform:translateX(-50%);
+    left: 50%;
+}
+img[src$="flash.png"]{
+    top: 20%;
 }
 img[src*="pika2.jpg"]{
 	width: 70%;
 	top: 15%;
-	left: 15%;
 	position: absolute;
+}
+img[src*="fb.png"]{
+    top: 10px;
+}
+/*font*/
+h1{
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+    text-align:center;
+    color: #ffff77;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align:center;
+}
+/*link*/
+a{
+    width: 0px;
+    height: 0px;
+    position: absolute;
 }
