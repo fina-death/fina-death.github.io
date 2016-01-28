@@ -11,21 +11,29 @@ class student:
         self.grades = []
 
     def add(self,grade):
-        #do something.
+        self.grades = self.grades + [grade]
 
     def avg(self):
-        #do something.
-        #return avg_grade
-
+        total = 0
+        j = 0
+        for i in self.grades :
+            total = total + i
+            j = j + 1
+        return total / j
+        
     def fcount(self):
-        #do something.
-        #return fail_count
+        count60 = 0
+        for i in self.grades[:]:
+            if i < 60:
+                count60 += 1 
+        return count60
 
 s1 = student("Tom","M")
 s2 = student("Jane","F")
 s3 = student("John","M")
 s4 = student("Ann","F")
 s5 = student("Peter","M")
+studentlist = [s1, s2, s3, s4, s5]
 s1.add(80)
 s1.add(90)
 s1.add(55)
@@ -39,3 +47,10 @@ s4.add(40)
 s4.add(55)
 s5.add(60)
 s5.add(60)
+
+namelist = ''
+j = 0
+for i in studentlist:
+    j += 1
+    namelist = namelist + str(j) + '.' + i.name + ' '
+
