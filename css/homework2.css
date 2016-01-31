@@ -1,6 +1,25 @@
+html{
+    width: 100vw;
+    height: 100hv;
+}
 body {
-	background-size: cover
+    font-family: 'cwTeXHei', sans-serif;
+    width: 100wh;
+    height: 100vh;
+    position: relative;
+    background-size: cover; 
 }
 table{
-	left: 50px
+    text-align: center;
+    font-size: 20px; 
+    top: 10%;
+    left: 55%;
+    position: absolute;
+}
+td.title{
+   color: #ffffff; 
+}
+th{
+   text-align: center; 
+   color: #ffffff;
 }
