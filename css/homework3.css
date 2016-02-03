@@ -1,5 +1,22 @@
 body{
-    font-size: 20px;
+    font-size: 40px;
+    position: relative;
+    background: -webkit-linear-gradient(left, #FFFACD, #FFFFFF, #FFFACD);
+    background: -o-linear-gradient(left, #FFFACD, #FFFFFF, #FFFACD);
+    background: -moz-linear-gradient(left, #FFFACD, #FFFFFF, #FFFACD);
+    background: linear-gradient(left, #FFFACD, #FFFFFF, #FFFACD);
+}
+a[href$="fonts"]{
+    color: #A0522D;
+    position: relative;
+    margin-left: -240px;
+    left: 50%;
+    font-family: 'Microsoft JhengHei', 'Heiti TC', 'WenQuanYi', 'Zen Hei', 'PMingLiU';
+    line-height: 60px;
+}
+p{
+    position: relative;
+    text-align: center;
 }
 .Lobster{
     font-family: 'Lobster', cursive;
@@ -84,4 +101,19 @@ body{
 }
 .Exo{
     font-family: 'Exo', sans-serif;
+}
+.fangsong{
+    font-family: 'cwTeXFangSong', serif;
+}
+.texhei{
+    font-family: 'cwTeXHei', sans-serif;
+}
+.texkai{
+    font-family: 'cwTeXKai', serif;
+}
+.texming{
+    font-family: 'cwTeXMing', serif;
+}
+.texyen{
+    font-family: 'cwTeXYen', sans-serif;
 }

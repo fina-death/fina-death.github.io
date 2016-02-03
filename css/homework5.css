@@ -1,7 +1,7 @@
 body{
     position: relative;
     width: 100%;
-    background-color: #ffff88;
+    background-color: #ffffff;
     font-size: 20px;
     font-family: 'cwTeXHei', sans-serif;
 }
@@ -14,14 +14,14 @@ section{
     height: 50px;
     z-index: 1;
 }
-ul{
-    left: 30%;
-    position: relative;
+li{
+    display: block;
+    margin: auto;
 }
 ul li{
     float: left;
     background-color: #995533;
-    width: 10%;
+    width: 190px;
     line-height: 50px;
     font-size: 14pt;
     text-align: center;
@@ -33,7 +33,7 @@ ul li a{
 ul li ul{
     left: 0;
     display: none;
-    position: relative;
+/*    position: relative;*/
 }
 ul li ul li{
     width: 100%;
@@ -58,7 +58,6 @@ ul li ul li:hover {
 
 #p1{
     width: 100%;
-    background-color: #ffffff;
     position: relative;
     height: 100vh;
     text-align: center;
@@ -70,15 +69,10 @@ img[src$="bk.jpg"]{
 }
 #p2{
     width: 100%;
-    background-color: #ffffff;
     position: relative;
-    height: 100vh;
 }
 #background{
-    position: absolute;
-    bottom: 75%;
-    transform:translateX(-50%);
-    left: 50%;
+    border-top: 50px solid #ffffff;
 }
 #background h4{
     font-size: 2em;
@@ -86,41 +80,126 @@ img[src$="bk.jpg"]{
 }
 #background p{
     text-align: left;
-    width: 1000px;
-}
-#storystart{
+    max-width: 1300px;
     width: 100%;
-    position: absolute;
-    height: auto;
-    top: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 img[src$="set.jpg"]{
-    margin: 0px 50px 0px 50px;
-    right: 50%;
-    position: absolute;
+    display: block;
+    margin: 20px auto;
 }
-.story{
-    left: 50%;
-    margin: 0px 100px 0px 100px;
-    width: 500px;
-    position: absolute;
+#storystart{
+    border-top: 50px solid #ffffff;
 }
-.story h4{
+#storystart h4{
     font-size: 2em;
     text-align: center;
 }
-.story p{
+#storystart p{
+    text-align: left;
+    max-width: 1300px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 #good{
     position: relative;
     width: 100%;
 }
-
+#p3{
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 100vh;
+    max-width: 1125px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    border: dashed 5px;
+    color: #A0522D;
+}
+img[src$="gif"]{
+    padding-top: 10px; 
+    display: block;
+    margin: auto;
+}
+h4{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+    color: #A0522D;
+}
+#good{
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 100%;
+    max-width: 375px;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #ffffaa;
+    margin: 5px 1% 5px 0.5%;
+    border-top: 50px solid #ffffff; 
+}
+#good p{
+    padding: 10px 20px 10px 20px;
+}
+#bad{
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 100%;
+    max-width: 375px;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #ffffaa;
+    margin: 5px 0.5% 5px 0.5%;
+    border-top: 50px solid #ffffff;
+}
+#bad p{
+    padding: 10px 20px 10px 20px;
+}
+#feature{
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 100%;
+    max-width: 375px;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #ffffaa;
+    margin: 5px 0.5% 5px 1%;
+    border-top: 50px solid #ffffff;
+}
+#feature p{
+    padding: 10px 20px 10px 20px;
+}
 .top{
     position: fixed;
-    top: 90%;
+    top: 80%;
     left: 90%;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius:50%; 
     background-color: #995533;
+}
+a[class="top"]{
+    color: #ffff88;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 80px;
 }
