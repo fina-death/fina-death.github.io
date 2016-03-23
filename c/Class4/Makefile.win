@@ -1,0 +1,37 @@
+# Project: TEST4
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = 1041.o 1042.o 1043.o 1106.o
+LINKOBJ  = 1041.o 1042.o 1043.o 1106.o
+LIBS     = -L"D:/train/cpp/DevCppPortable/MinGW64/lib" -L"D:/train/cpp/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/train/cpp/DevCppPortable/MinGW64/include" -I"D:/train/cpp/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/train/cpp/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/train/cpp/DevCppPortable/MinGW64/include" -I"D:/train/cpp/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/train/cpp/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/train/cpp/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = TEST4.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+1041.o: 1041.c
+	$(CC) -c 1041.c -o 1041.o $(CFLAGS)
+
+1042.o: 1042.c
+	$(CC) -c 1042.c -o 1042.o $(CFLAGS)
+
+1043.o: 1043.c
+	$(CC) -c 1043.c -o 1043.o $(CFLAGS)
+
+1106.o: 1106.c
+	$(CC) -c 1106.c -o 1106.o $(CFLAGS)

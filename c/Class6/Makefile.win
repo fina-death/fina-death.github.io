@@ -1,0 +1,37 @@
+# Project: test6
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = 1061.o 1063.o 1062.o prime.o
+LINKOBJ  = 1061.o 1063.o 1062.o prime.o
+LIBS     = -L"D:/Train/DevCppPortable/MinGW64/lib" -L"D:/Train/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/Train/DevCppPortable/MinGW64/include" -I"D:/Train/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/Train/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Train/DevCppPortable/MinGW64/include" -I"D:/Train/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/Train/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Train/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = test6.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+1061.o: 1061.c
+	$(CC) -c 1061.c -o 1061.o $(CFLAGS)
+
+1063.o: 1063.c
+	$(CC) -c 1063.c -o 1063.o $(CFLAGS)
+
+1062.o: 1062.c
+	$(CC) -c 1062.c -o 1062.o $(CFLAGS)
+
+prime.o: prime.c
+	$(CC) -c prime.c -o prime.o $(CFLAGS)
