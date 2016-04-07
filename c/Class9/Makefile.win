@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = 1095.o
-LINKOBJ  = 1095.o
+OBJ      = 1095.o 1097.o 1096.o
+LINKOBJ  = 1095.o 1097.o 1096.o
 LIBS     = -L"D:/train/cpp/DevCppPortable/MinGW64/lib" -L"D:/train/cpp/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/train/cpp/DevCppPortable/MinGW64/include" -I"D:/train/cpp/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/train/cpp/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/train/cpp/DevCppPortable/MinGW64/include" -I"D:/train/cpp/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/train/cpp/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/train/cpp/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -26,3 +26,9 @@ $(BIN): $(OBJ)
 
 1095.o: 1095.cpp
 	$(CPP) -c 1095.cpp -o 1095.o $(CXXFLAGS)
+
+1097.o: 1097.cpp
+	$(CPP) -c 1097.cpp -o 1097.o $(CXXFLAGS)
+
+1096.o: 1096.cpp
+	$(CPP) -c 1096.cpp -o 1096.o $(CXXFLAGS)

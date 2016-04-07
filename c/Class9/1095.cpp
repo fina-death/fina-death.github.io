@@ -27,7 +27,7 @@ class Square{
 		int len;
 };
 
-int main(int argc, char** argv) {
+int main1095(int argc, char** argv) {
 	Square s1, s2, s3;
 	
 	s1.setLen(0);
