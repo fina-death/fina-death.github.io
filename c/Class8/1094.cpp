@@ -18,11 +18,10 @@ void Sequence(string *array, int num){
 
 int main(int argc, char** argv) {
 	int n;
-	string *strarray;
+	string *str1;
 	
 	cin >> n;
-	strarray = new string(n);
-/*	
+	str1 = new string[n];
 	for(int i=0;i<n;i++){
 		cin >> *(str1+i);
 	}
@@ -30,5 +29,4 @@ int main(int argc, char** argv) {
 	for(int i=0;i<n;i++){
 		cout << *(str1+i) << " ";
 	}
-	*/
 }

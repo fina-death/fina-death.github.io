@@ -4,7 +4,7 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 
-int main(int argc, char *argv[]) {
+int main1073(int argc, char *argv[]) {
 	FILE *RF, *WF;
 	int n=0;
 	float num;
